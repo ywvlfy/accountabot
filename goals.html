@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Accountabot</title>
+</head>
+<body>
+
+	<div class="goals-container">
+
+		<!--  -->
+		<!-- Ask user what their goal is -->
+		<h1 class="goaltitle">What is your goal?</h1>
+		<form>
+			<label for="goal">Goal:</label>
+			<input type="text" id="goal" name="goal" placeholder="My Goal is...">
+
+			<!--  -->
+			<!-- Ask for confirmation -->
+			<br>
+			<br>
+			<label for="confirmation">Are you sure you're committed to achieving this goal, and willing to constantly update on your progress?</label>
+			<br>
+
+			<input type="radio" id="confirmation" name="confirmation" value="yes">
+ 			 <label for="male">Yes</label>
+ 			 <br>
+
+	 		 <input type="radio" id="confirmation" name="confirmation" value="no">
+	 		 <label for="female">No</label>
+	 		 <br>
+	 		 <br>
+
+	 		 <!--  -->
+	 		 <!-- Create Confirmation Group -->
+	 		 	<!-- Uses Discord API to retrieve discord friends list and creates group from the list -->
+	 		 	<!-- currently just a faux setup, liam you're more than welcome to message me about this if you would like it done some other way, this is currently just a placeholder idea -->
+	 		 <label for="group">Awesome! We're going to need a confirmation group. Please choose at least 2 others to be apart of your confirmation group from your friends on discord (they MUST be your friend on discord! If not, please do so, and reload the page)</label>
+	 		 <br>
+		 		 <select id="group" name="group">
+	 				 <option value="au">John</option>
+	 				 <option value="ca">Joe</option>
+	  				 <option value="usa">Sarah</option>
+	  				 <option value="ex">Example</option>
+	  				 <option value="ex">Example</option>
+	 			 </select>
+	 		<br>
+	 		<br>
+
+	 		<!--  -->
+	 		<!-- Choose update frequency -->
+
+	 		<label for="freq">How often do you want to make it a requirement to update on goal progress, for both you, and the rest of your group?</label>
+
+	 		<br>
+
+
+	 			<input type="radio" id="freq" name="freq" value="1d">
+ 			 <label for="1d">Once a day</label>
+ 	
+
+	 		 <input type="radio" id="freq" name="freq" value="1w">
+	 		 <label for="1w">Once a week</label>
+
+
+
+	 		 <input type="radio" id="freq" name="freq" value="2w">
+	 		 <label for="2w">Twice a week</label>
+
+
+	 		 <input type="radio" id="freq" name="freq" value="1m">
+	 		 <label for="1m">Once a month</label>
+
+	 		 <br>
+	 		 <br>
+	 		 <br>
+
+
+	 		 <input type="submit" name="submit" value="submit" class="submit">
+
+
+
+
+
+
+
+
+
+
+		</form>
+	</div>
+
+</body>
+</html>
